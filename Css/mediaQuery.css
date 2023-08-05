@@ -284,6 +284,17 @@
     .destinosMain {
         scale: 0.85;
     }
+    .sombra {
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: -5rem;
+        left: 0;
+        background: linear-gradient(180deg,
+                    hsla(0, 0%, 0%, 0) 5%,
+                    hsl(0, 0%, 0%) 30%);
+    }
 }
 
 @media screen and (max-width: 340px) {
@@ -323,6 +334,5 @@
     }
     .info {
         font-size: 12px;
-
     }
 }
