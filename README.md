@@ -12,8 +12,6 @@ Readme.Github
 ### Desenvolver uma Landing Page responsiva.
 ### Aprender a fazer links que ficam ativos de acordo com a sessão da página.
 
-### Apresentar um pouco sobre mim e minhas habilidades, e também, aprender bastante no processo.
-
 ## 🔨Funcionalidades da aplicação web - RFs
 
 - `Funcionalidade 1`: Vários links (incluindo no menu) que facilitarão a navegação.
@@ -29,12 +27,6 @@ Readme.Github
 ## <p align="center">📱Interface</p>
 
 <p align="center">
-
-<img src="imagens/PrintTurismo.png" width="700px" align="center">
-</p>
-
-## Gostaria de dar uma olhada na Landing Page? Clique no link abaixo:
-### 
 
 <img src="imagens/PrintTurismo.png" width="700px" align="center">
 </p>
