@@ -27,22 +27,6 @@ window.addEventListener("scroll", () => {
     let header = document.querySelector("#header")
     header.classList.toggle('headerRoll', window.scrollY > 0)
 })
-/*
-window.onscroll = () =>{
-    section.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        
-        if (top >= offset && top < offset + height) {
-            linkMenu.forEach(links => {
-                links.classList.remove('activeClass')
-                document.querySelector('.linkNav a[href*=' + id + ']').classList.add('activeClass')
-            })
-        }
-    })
-}*/
 
 window.onscroll = () =>{
     const scrollY2 = window.pageYOffset
