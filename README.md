@@ -9,8 +9,8 @@ Readme.Github
 
 ## 🎯Proposta do projeto
 
-### Desenvolver uma Landing Page responsiva.
-### Aprender a fazer links que ficam ativos de acordo com a sessão da página.
+### 1. Desenvolver uma Landing Page responsiva.
+### 2. Aprender a fazer links que ficam ativos de acordo com a sessão da página.
 
 ## 🔨Funcionalidades da aplicação web - RFs
 
