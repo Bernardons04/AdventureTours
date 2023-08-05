@@ -254,6 +254,7 @@ section h1 {
     background: linear-gradient(180deg,
                 hsla(0, 0%, 0%, 0) 30%,
                 hsl(0, 0%, 0%) 60%);
+    border: solid 1px white;
 }
 .sombra2 {
     position: absolute;
