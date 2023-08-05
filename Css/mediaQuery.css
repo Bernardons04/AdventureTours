@@ -1,0 +1,328 @@
+@media screen and (max-width: 1440px) {
+    .contentInicio h2 {
+        font-size: 2rem;
+    }
+    .contentInicio h1 {
+        font-size: 4rem;
+    }
+    .contentInicio p {
+        max-width: 70%;
+    }
+    .contentInicio {
+        max-width: 100%;
+        margin: 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .footer-logo h3{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 1180px) {
+    .listaDestinos {
+        max-width: 800px;
+    }
+    .contentInicio h2 {
+        font-size: 2rem;
+    }
+    .contentInicio h1 {
+        font-size: 3.7rem;
+    }
+    .contentInicio p {
+        max-width: 80%;
+    }
+    .navHeader ul {
+        gap: 2rem;
+    }
+    header {
+        justify-content: space-between;
+        padding: 16px;
+    }
+    .divServicos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .divForm {
+        gap: 1rem;
+    }
+    #contato {
+        gap: 2rem;
+    }
+    .divForm span {
+        font-size: 3rem;
+    }
+    .divForm h2 {
+        font-size: 2rem;
+    }
+    .divContactImg {
+        width: 500px;
+    }
+    
+}
+@media screen and (max-width: 1034px) {
+    .divForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 35%;
+        gap: 1rem;
+    }
+
+    .divForm form button {
+        padding: 13px 10px;
+    }
+    
+    .divForm form input {
+        padding: 10px;
+        font-size: 1.2rem;
+        border: none;
+        outline: 0;
+    }
+    .pInicial {
+        width: 80%;
+    }
+    .footer-enteprise {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+}
+
+@media screen and (max-width: 868px) {
+    #contato {
+        flex-direction: column-reverse;
+        padding-top: 4rem;
+    }
+    .divForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        gap: 2rem;
+        text-align: center;
+    }
+    .divContactImg {
+        width: 70%;
+    }
+    footer {
+        font-size: 15px;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .listaDestinos {
+        max-width: 378px;
+        margin: 0 auto !important;
+    }
+    .divDestinos {
+        margin: 0 32px !important;
+    }
+    .contentInicio h2 {
+        font-size: 1.85rem;
+    }
+    .contentInicio h1 {
+        font-size: 2.5rem;
+    }
+    .contentInicio p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .navHeader {
+        display: none;
+    }
+    .divMenu {
+        display: block;
+    }
+    header {
+        justify-content: space-around;
+        padding: 16px 0;
+    }
+    .showNav{
+        display: block !important;
+        position: absolute;
+        top: 75px;
+        width: 100%;
+        background-color: hsla(0, 0%, 0%, 0.3);
+        backdrop-filter: blur(30px);
+        border-bottom: solid 3px var(--cor1);
+        box-shadow: -1px 0 4px rgba(0, 0, 0, 0.336);
+        padding: 2rem 1.5rem 2rem;
+        border-radius: 0 0 1rem 1rem;
+        text-align: center;
+    }
+    .linkNav a::after {
+        left: 40%;
+    }
+    nav a:hover::after {
+        width: 20% !important;
+    }
+    .navList {
+        display: grid !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .footerInferior {
+        flex-direction: column-reverse;
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+    .info {
+        padding: 1rem;
+        gap: 0rem;
+        justify-content: center;
+    }
+    .footer-enteprise {
+        align-items: center;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .contentInicio h2 {
+        font-size: 1.7rem;
+    }
+    .contentInicio h1 {
+        font-size: 2.3rem;
+    }
+    .contentInicio p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .btnInicio {
+        max-width: 70%;
+    }
+    .btnRegister a {
+        font-size: 1rem;
+    }
+    #inicio {
+        padding: 50px;
+    }
+    .divForm {
+        max-width: 70%;
+    }
+    .pInicial {
+        font-size: 18px;
+        color: var(--cor2);
+        width: 90%;
+        text-align: center;
+    }
+    .footerInferior, .footer-content {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    section h1 {
+        font-size: 1.5rem;
+    }
+    .destinosMain {
+        scale: 0.9;
+    }
+    #destinos {
+        gap: 1rem;
+    }
+    .contentInicio h2 {
+        font-size: 1.4rem;
+    }
+    .contentInicio h1 {
+        font-size: 2.3rem;
+    }
+    .contentInicio p {
+        font-size: .9rem;
+        max-width: 100%;
+    }
+    .btnInicio {
+        max-width: 75%;
+    }
+    .btnRegister a {
+        font-size: 1rem;
+    }
+    #inicio {
+        padding: 20px;
+    }
+    .divAdventure {
+        font-size: 1.1rem;
+    }
+    .divServicos {
+        gap: 3rem;
+    }
+    .divForm {
+        gap: .8rem;
+        max-width: 90%;
+    }
+    .divContactImg {
+        width: 90%;
+    }
+    .pInicial {
+        font-size: 15px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    .contentInicio h2 {
+        font-size: 1.2rem;
+    }
+
+    .contentInicio p {
+        font-size: .9rem;
+        max-width: 100%;
+    }
+    .btnInicio {
+        max-width: 75%;
+    }
+    .btnRegister a {
+        font-size: 1rem;
+    }
+    .info {
+        font-size: 13px;
+    }
+    .destinosMain {
+        scale: 0.85;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    section h1 {
+        font-size: 1.3rem;
+    }
+    .destinosMain {
+        scale: 0.8;
+    }
+    .listaDestinos {
+        max-width: 3;
+    }
+    .contentInicio h1 {
+        font-size: 2rem;
+    }
+    .contentInicio h2 {
+        font-size: 1.15rem;
+    }
+    .contentInicio p {
+        font-size: .8rem;
+        max-width: 100%;
+    }
+    #inicio {
+        padding: 14px;
+    }
+    .divAdventure {
+        font-size: 1rem;
+    }
+    .iconeMenu {
+        font-size: 1.7rem;
+    }
+    .showNav{
+        top: 68px;
+    }
+    .pacote {
+        width: 280px;
+    }
+    .info {
+        font-size: 12px;
+
+    }
+}

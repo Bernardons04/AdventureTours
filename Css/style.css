@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+:root {
+    --laranja: rgb(218, 114, 54);
+    --cor2: white;
+    --cor3: #333333;
+    --azul: #007bff;
+    --verde: #40bb50;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--laranja);
+    border-radius: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 16px 0;
+    align-items: center;
+    z-index: 20;
+}
+
+.headerRoll::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, .3);
+    backdrop-filter: blur(30px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+section {
+    min-height: 100vh;
+    color: var(--cor2);
+    padding-bottom: 2rem;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 4.2rem;
+    color: var(--azul);
+}
+
+.divAdventure {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+}
+
+.divAdventure span {
+    transition: .2s ease-in-out;
+    padding: 17px 1px;
+    color: var(--cor2);
+    transition: .3s ease-in-out;
+}
+
+.divAdventure span:hover {
+    color: var(--laranja);
+    position: relative;
+    bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+.linkNav {
+    list-style: none;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.linkNav a {
+    font-weight: 600;
+    transition: .4s ease-in-out;
+}
+
+.activeClass {
+    color: var(--laranja);
+    border-bottom: solid 5px var(--laranja);
+}
+
+.linkNav a:hover {
+    color: var(--laranja);
+}
+
+.linkNav a::after {
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--laranja);
+    transition: .4s ease-in-out;
+}
+.linkNav a:hover::after {
+    width: 100%;
+}
+
+.navHeader ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.divMenu {
+    display: none;
+    transition: .4s ease-in-out;
+}
+
+.iconeMenu {
+    color: var(--cor2);
+    font-size: 2rem;
+}
+
+.btnRegister {
+    padding: 15px 20px;
+    border: none;
+    background-color: var(--laranja);
+    cursor: pointer;
+    max-width: 500px;
+}
+
+.contentInicio .btnRegister:hover {
+    transform: scale(1.1);
+}
+
+.btnRegister a {
+    color: var(--cor2);
+}
+
+#inicio {
+    background: rgba(0, 0, 0, 0.753) url(../imagens/turismo1.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.contentInicio {
+    max-width: 80%;
+    margin: 0 50px;
+    color: var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contentInicio h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contentInicio h1 {
+    text-align: center;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px var(--cor2);
+    color: transparent;
+    margin: 0;
+}
+
+.contentInicio p {
+    font-size: 1.15rem;
+    max-width: 50%;
+    text-align: center;
+}
+
+.arrow {
+    top: 50%;
+    background: var(--cor2);
+    color: black;
+    height: 46px;
+    width: 46px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.arrow:hover {
+    background: var(--azul);
+    color: var(--cor2);
+}
+
+.arrow:first-child {
+    left: 20px;
+}
+.arrow:last-child {
+    right: 20px;
+}
+
+#destinos, #servicos {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    gap: 3rem;
+}
+
+.sombra {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg,
+                hsla(0, 0%, 0%, 0) 30%,
+                hsl(0, 0%, 0%) 100%);
+}
+.sombra2 {
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 10%;
+    bottom: -9%;
+    left: 0;
+    background: linear-gradient(to bottom,
+            hsl(0, 0%, 0%) 60%,
+                hsla(0, 0%, 0%, 0.041) 100%);
+}
+#destinos {
+    position: relative;
+}
+.destinosMain {
+    position: relative;
+    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listaDestinos {
+    width: 90%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+}
+.divDestinos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+    gap: 12px;
+    
+}
+
+.divDestinos:first-child {
+    margin-left: 46px;
+}
+
+.divDestinos:last-child {
+    margin-right: 46px;
+}
+
+.divDestinos span {
+    color: gray;
+    font-weight: 500;
+}
+
+.divImg {
+    position: relative;
+    overflow: hidden;
+    width: 282px;
+    cursor: pointer;
+}
+
+.divImgServicos {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    cursor: pointer;
+}
+
+.img {
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.divImg:hover .img, 
+.divImgServicos:hover .img,
+.divContactImg:hover .img {
+    transform: scale(1.2);
+}
+
+.divServicos {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contentServicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    position: relative;
+}
+
+.contentServicos h2 {
+    position: absolute;
+    bottom: 0%;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    background: hsla(0, 0%, 0%, 0.836);
+}
+#servicos h1{
+    color: var(--cor2);
+}
+
+.divContactImg {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    cursor: pointer;
+}
+#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    gap: 2rem;
+}
+
+.divForm h2 {
+    font-size: 2.5rem;
+}
+
+.divForm span {
+    font-size: 4rem;
+    -webkit-text-stroke: 1px var(--cor2);
+    color: transparent;
+}
+
+
+.btnRegister:hover {
+    background-color: rgb(199, 101, 44);
+}
+
+.divForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.divForm form input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    outline: 0;
+}
+
+#precos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.849) url(../imagens/sunset.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem;
+
+}
+
+.precos h2 {
+    font-size: 28px;
+    color: var(--cor2);
+}
+
+.pInicial {
+    font-size: 20px;
+    color: var(--cor2);
+    width: 60%;
+    text-align: center;
+}
+
+.pacotes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pacote {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 319px;
+    height: 400px;
+    text-align: center;
+    justify-content: space-around;
+    border: solid 3px var(--cor3);
+    transition: .4s ease-in-out;
+    z-index: 3;
+}
+
+.pacote:hover {
+    transform: scale(1.05);
+    border: solid 3px var(--verde);
+}
+
+.pacote h3 {
+    font-size: 20px;
+    color: var(--cor2);
+    text-align: center;
+}
+
+.pacote ul {
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    color: var(--cor2);
+}
+
+.preco {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+.btn-destaque {
+    border: solid 3px var(--verde);
+    color: var(--cor2);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.btn-destaque:hover {
+    background-color: var(--verde);
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.904) url(../imagens/destinoFundo.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    gap: 5rem;
+    padding: 3rem 0;
+    font-size: 17px;
+}
+
+footer i {
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.contentInicio p {
+    max-width: 100%;
+}
+
+.footerInferior {
+    width: 100%;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-enteprise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info li {
+    margin-top: .8rem;
+}
+
+.info li:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons a i {
+    font-size: 1.7rem;
+}
+
+.social-icons a i:hover {
+    color: var(--verde);
+    transition: 0.2s ease-in-out;
+}
+
+.direitos {
+    text-align: center;
+}
