@@ -4,6 +4,8 @@ Readme.Github
 
 ## 📱Descrição do projeto
 ### Esse projeto se trata de uma Landing Page responsiva de uma agência de Turismo fictícia.
+### Desenvolvi o projeto do início ao fim, desde a busca cuidadosa por imagens que transmitissem a essência aventureira, até a escolha minuciosa da paleta de cores que captura a energia da natureza.
+### Uma parte fundamental do processo criativo foi com o auxílio do ChatGPT. Utilizei essa ferramenta para gerar os textos da página, como descrições dos pacotes e até mesmo para escolher as paisagens que melhor representassem a aventura que a "Adventure Tours" oferece.
 
 <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
 
